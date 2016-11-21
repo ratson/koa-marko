@@ -1,4 +1,9 @@
-export default ({renderMethod = 'render', watchPaths = '**/*.marko', watchOptions = {ignored: /node_modules/}} = {}) => {
+import {defaultOptions} from 'marko/compiler'
+
+export default ({renderMethod = 'render', watchPaths = '**/*.marko', watchOptions = {ignored: /node_modules/}, compilerOptions} = {}) => {
+  if (compilerOptions) {
+    Object.assign(defaultOptions, compilerOptions)
+  }
   if (__DEV__ && watchPaths) {
     const hotReload = require('marko/hot-reload')
     const path = require('path')
@@ -8,6 +13,7 @@ export default ({renderMethod = 'render', watchPaths = '**/*.marko', watchOption
       hotReload.handleFileModified(templatePath)
     })
   }
+
   return (ctx, next) => {
     if (ctx[renderMethod]) {
       return next()
