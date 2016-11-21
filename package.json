@@ -10,9 +10,8 @@
     "example": "babel-node example/app",
     "clean": "rimraf lib dist coverage",
     "lint": "csc",
-    "posttest": "npm run lint",
     "prepublish": "npm-run-all clean build",
-    "test": "ava"
+    "test": "npm run lint"
   },
   "dependencies": {
     "marko": "^3.12.1"
