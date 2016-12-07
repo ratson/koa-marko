@@ -1,6 +1,6 @@
 {
   "name": "koa-marko",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Marko template engine middleware for koa",
   "main": "lib/index.js",
   "scripts": {
