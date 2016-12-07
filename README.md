@@ -5,7 +5,7 @@ Marko template engine middleware for koa
 ## Installation
 
 ```
-npm install koa-marko koa@next --save
+npm install koa-marko koa@next marko --save
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ import template from './template.marko'
 const app = new Koa()
 
 app.use(marko())
-app.use(ctx => {
+app.use((ctx) => {
   ctx.render(template)
 })
 
