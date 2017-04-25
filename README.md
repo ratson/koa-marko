@@ -5,7 +5,7 @@ Marko template engine middleware for koa
 ## Installation
 
 ```
-npm install koa-marko koa@next marko --save
+npm install koa-marko koa marko --save
 ```
 
 ## Usage
