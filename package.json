@@ -4,44 +4,29 @@
   "description": "Marko template engine middleware for koa",
   "main": "lib/index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production babel --source-maps --out-dir=lib/ src/",
-    "dev": "cross-env NODE_ENV=development babel --watch --source-maps --out-dir=lib/ src/",
-    "preexample": "npm run build",
-    "example": "babel-node example/app",
-    "clean": "del lib",
+    "example": "node example/app",
     "lint": "csc",
-    "prepublish": "npm-run-all clean build",
     "test": "ava"
   },
   "peerDependencies": {
     "marko": "*"
   },
   "optionalDependencies": {
-    "cheerio": "^0.22.0",
     "chokidar": "^1.7.0"
   },
   "devDependencies": {
     "ava": "^0.19.1",
-    "babel-cli": "^6.24.1",
-    "babel-eslint": "^7.2.3",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-dev-expression": "^0.2.1",
-    "babel-preset-env": "^1.5.2",
-    "babel-register": "^6.24.1",
-    "cheerio": "^0.22.0",
     "chokidar": "^1.7.0",
-    "cross-env": "^5.0.0",
     "csc": "^0.6.1",
     "del-cli": "^1.0.0",
     "koa": "^2.2.0",
     "marko": "^4.4.9",
-    "npm-run-all": "^4.0.2",
     "supertest": "^3.0.0"
   },
   "repository": "ratson/koa-marko",
   "license": "MIT",
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "files": [
     "*.md",
