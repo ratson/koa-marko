@@ -11,14 +11,14 @@
     "clean": "del lib",
     "lint": "csc",
     "prepublish": "npm-run-all clean build",
-    "test": "npm run lint"
+    "test": "ava"
   },
   "peerDependencies": {
     "marko": "*"
   },
   "optionalDependencies": {
     "cheerio": "^0.22.0",
-    "chokidar": "^1.6.1"
+    "chokidar": "^1.7.0"
   },
   "devDependencies": {
     "ava": "^0.19.1",
@@ -26,16 +26,17 @@
     "babel-eslint": "^7.2.3",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-dev-expression": "^0.2.1",
-    "babel-preset-env": "^1.4.0",
+    "babel-preset-env": "^1.5.2",
     "babel-register": "^6.24.1",
     "cheerio": "^0.22.0",
-    "chokidar": "^1.6.1",
-    "cross-env": "^4.0.0",
+    "chokidar": "^1.7.0",
+    "cross-env": "^5.0.0",
     "csc": "^0.6.1",
     "del-cli": "^1.0.0",
     "koa": "^2.2.0",
-    "marko": "^4.2.8",
-    "npm-run-all": "^4.0.2"
+    "marko": "^4.4.9",
+    "npm-run-all": "^4.0.2",
+    "supertest": "^3.0.0"
   },
   "repository": "ratson/koa-marko",
   "license": "MIT",
