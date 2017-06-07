@@ -11,10 +11,10 @@ npm install koa-marko koa marko --save
 ## Usage
 
 ```js
-import Koa from 'koa'
-import marko from 'koa-marko'
+const Koa = require('koa')
+const marko = require('koa-marko')
 
-import template from './template.marko'
+const template = require('./template.marko')
 
 const app = new Koa()
 
