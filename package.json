@@ -12,11 +12,11 @@
     "marko": "*"
   },
   "optionalDependencies": {
-    "chokidar": "^1.7.0"
+    "chokidar": "^2.0.0"
   },
   "devDependencies": {
     "ava": "^0.24.0",
-    "csc": "^0.16.3",
+    "csc": "^0.16.4",
     "del-cli": "^1.1.0",
     "koa": "^2.4.1",
     "marko": "^4.7.4",
