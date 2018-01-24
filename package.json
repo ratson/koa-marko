@@ -28,6 +28,12 @@
   "engines": {
     "node": ">=6"
   },
+  "keywords": [
+    "koa",
+    "marko",
+    "template",
+    "middleware"
+  ],
   "files": [
     "*.md",
     "LICENSE",
